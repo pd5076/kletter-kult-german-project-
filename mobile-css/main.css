@@ -81,7 +81,7 @@ main {
   margin: 20px;
 }
 .course-container {
-  width: auto;
+  width: 100%;
   outline: 3px #000 solid;
   border-radius: 10px;
   height: max-content;
@@ -89,7 +89,7 @@ main {
   margin: 20px 5px;
 }
 .course-container .image-container {
-  width: fit-content;
+  width: 100%;
 }
 .course-container .image-container img {
   width: 100%;
@@ -235,11 +235,124 @@ main {
 /* Contact Section Ends */
 
 /* for screen medium screen size */
-@media (min-width: 430px) and (max-width: 760px) {
+@media (min-width: 425px) and (max-width: 760px) {
+  .hero-text-container {
+    top: 70%;
+  }
+  .hero-text-container h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text-container h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  .course-box {
+    margin: 40px 20px;
+  }
+  .jobs-text-container {
+    padding: 2% 5%;
+  }
+  .contact-text-container {
+    margin: 10% auto;
+  }
 }
 /* for tablets and small desktop screens */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .hero-text-container {
+    top: 70%;
+  }
+  .hero-text-container h1 {
+    font-size: 3rem;
+  }
+  .hero-text-container h2 {
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .light-container h1 {
+    font-size: 2rem;
+  }
+  .dark-container h3 {
+    font-size: 1.5rem;
+  }
+  .section-heading-kurse {
+    font-size: 4rem;
+    top: -60px;
+    right: 20px;
+  }
+  .course-box {
+    margin: 50px 30px;
+  }
+  .course-container .text-container {
+    padding: 5%;
+  }
+  .text-container h1 {
+    font-size: 2.5rem;
+  }
+  .text-container h2 {
+    font-size: 1.8rem;
+  }
+  .text-container h3 {
+    font-size: 1.5rem;
+  }
+  .section-heading-termine {
+    font-size: 4rem;
+    top: -60px;
+    right: 20px;
+  }
+  .events-container {
+    padding: 5%;
+  }
+  .events-container h1 {
+    font-size: 2rem;
+  }
+  .events-container h2 {
+    font-size: 1.5rem;
+  }
+  .info-text h1 {
+    font-size: 2rem;
+  }
+  .info-text h2 {
+    font-size: 1.5rem;
+  }
+  .info-text p {
+    font-size: 1.2rem;
+  }
+  .jobs-text-container {
+    padding: 2% 5%;
+  }
+  .jobs-text-container h1 {
+    font-size: 2rem;
+  }
+  .jobs-text-container p {
+    font-size: 1.5rem;
+  }
+  .job-item h3 {
+    font-size: 1.5rem;
+  }
+  .job-item li {
+    font-size: 1.2rem;
+  }
+  .job-paragraph {
+    padding: 2% 0;
+  }
+  .job-paragraph p {
+    margin: 10px;
+  }
+  .contact-text-container {
+    margin: 10% auto;
+  }
+  .contact-text-container h1 {
+    font-size: 2rem;
+  }
+  .contact-text-container h3 {
+    font-size: 1.5rem;
+  }
+  .link-items {
+    margin-left: 30px;
+    font-size: 1.2rem;
+  }
 }
+
 /* for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
 }
