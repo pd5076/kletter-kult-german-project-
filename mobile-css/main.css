@@ -1,0 +1,250 @@
+:root {
+  --dark_color: #000;
+  --dark_main_color: #ff7300;
+  --light_main_color: #ffe3cd;
+  --light-color: #fff;
+}
+main {
+  margin: 0;
+}
+/* Hero Section Starts */
+.hero-container {
+  display: flex;
+  position: relative;
+}
+.hero-image-container {
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  height: max-content;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  z-index: -1;
+}
+.hero-image-container img {
+  width: 100vw;
+}
+.hero-text-container {
+  width: 70%;
+  position: absolute;
+  top: 47%;
+  right: 0px;
+  text-align: right;
+  margin: 0 3%;
+}
+.hero-text-container h1 {
+  color: var(--light-color);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.hero-text-container h2 {
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Hero Section Ends */
+
+/* Pricing Container Starts */
+.pricing--section {
+  background-color: var(--light-color);
+}
+.light-container {
+  padding: 5%;
+}
+.dark-container {
+  background-color: var(--light_main_color);
+  padding: 5%;
+}
+.pricing-container {
+  width: 100vw;
+  height: fit-content;
+}
+.pricing-container img {
+  width: 100%;
+}
+/* Pricing Container Ends */
+
+/* Course Section Starts */
+.course--section {
+  width: 100%;
+  margin: 0;
+  background-color: var(--light-color);
+  padding: 30px 20px;
+  position: relative;
+}
+.section-heading-kurse {
+  font-size: 3rem;
+  position: absolute;
+  right: 10px;
+  top: -50px;
+  color: var(--dark_main_color);
+  margin: 20px;
+}
+.course-container {
+  width: auto;
+  outline: 3px #000 solid;
+  border-radius: 10px;
+  height: max-content;
+  background-color: var(--dark_main_color);
+  margin: 20px 5px;
+}
+.course-container .image-container {
+  width: fit-content;
+}
+.course-container .image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.course-container .text-container {
+  padding: 10px;
+}
+.course-container h1 {
+  color: var(--light-color);
+  text-align: center;
+}
+.course-container h2 {
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+.course-container h3 {
+  color: var(--light-color);
+  font-weight: bold;
+}
+/* Course Section Ends */
+
+/* Events Section Starts */
+.events--section {
+  width: 100%;
+  height: max-content;
+  position: relative;
+}
+.section-heading-termine {
+  position: absolute;
+  font-size: 3rem;
+  right: 10px;
+  top: -50px;
+  color: var(--dark_main_color);
+  margin: 20px;
+}
+
+.events-container {
+  border: 5px solid var(--light_main_color);
+  width: auto;
+  height: max-content;
+  background-color: var(--light_main_color);
+  padding: 30px 20px;
+}
+.events-container h1 {
+  color: var(--dark_main_color);
+  text-align: center;
+}
+.events-container h2 {
+  font-weight: 400;
+  font-size: 18px;
+}
+/* Events Section Ends */
+/* Info Section Starts */
+.info--section {
+  background-color: var(--light-color);
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 5%;
+}
+.info-container {
+}
+.info-image {
+  width: ;
+}
+.info-image img {
+  width: 70vw;
+  margin: 0 10%;
+}
+.info-text {
+  font-size: 18px;
+  text-align: right;
+  border: 2px solid var(--dark_color);
+  padding: 2%;
+}
+.info-text h1 {
+  color: var(--dark_main_color);
+}
+.info-text h2 {
+  font-size: 18px;
+}
+/* Info Section Ends */
+
+/* Jobs Section Starts */
+.jobs--section {
+  width: 100vw;
+  height: max-content;
+}
+.jobs-image-container {
+  width: 100vw;
+}
+.jobs-image-container img {
+  width: 100%;
+  background-color: var(--light-color);
+}
+.jobs-text-container {
+  color: var(--light-color);
+  margin: 10px;
+  padding: 10px;
+}
+.job-paragraph {
+  display: flex;
+  justify-content: space-between;
+}
+/* Jobs Section Ends */
+/* Contact Section Starts */
+.contact--section {
+  background-image: url(../images/contact.png);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.contact-container {
+  display: flex;
+}
+.contact-text-container {
+  width: 70%;
+  padding: 3%;
+  margin: 20% auto;
+  background-color: var(--light-color);
+}
+.contact-text-container h1 {
+  color: var(--dark_main_color);
+}
+.social-media--container {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.link-items {
+  font-size: 18px;
+}
+.link-items a {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  color: var(--dark_color);
+}
+.link-items a:active {
+  text-decoration: none;
+  color: var(--dark_color);
+}
+/* Contact Section Ends */
+
+/* for screen medium screen size */
+@media (min-width: 430px) and (max-width: 760px) {
+}
+/* for tablets and small desktop screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+/* for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}

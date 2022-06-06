@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../images/Favicon.png" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../mobile-css/shared.css" />
+  <link rel="stylesheet" href="../mobile-css/contact.css" />
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="../index.html" class="brand-logo-link">
+          <img src="../svg/brand-logo.svg" class="brand-img" alt="" srcset="">
+        </a>
+        <div class="hamburger-icons">
+          <img src="../svg/navbar-icon-1.svg" alt="" class="navbar-icon nav-open" srcset="">
+          <img src="../svg/navbar-icon-2.svg" alt="" class="navbar-icon nav-close" srcset="">
+        </div>
+        <ul class="nav-items desktop-nav">
+          <li class="nav-item"><a href="../index.html" class="nav-links">Home</a></li>
+          <li class="nav-item"><a href="/html/services.html" class="nav-links">Services</a></li>
+          <li class="nav-item"><a href="/html/teams.html" class="nav-links">Team</a></li>
+          <li class="nav-item"><a href="/html/career.html" class="nav-links">Careers</a></li>
+          <li class="nav-item"><a href="/html/contact.html" class="nav-links">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mobile-nav--container">
+        <ul class="nav-items_mobile mobile-nav">
+          <li class="nav-item_mobile"><a href="../index.html" class="nav-links_mobile">Home</a></li>
+          <li class="nav-item_mobile"><a href="/html/services.html" class="nav-links_mobile">Services</a></li>
+          <li class="nav-item_mobile"><a href="/html/teams.html" class="nav-links_mobile">Team</a></li>
+          <li class="nav-item_mobile"><a href="/html/career.html" class="nav-links_mobile">Careers</a></li>
+          <li class="nav-item_mobile"><a href="/html/contact.html" class="nav-links_mobile">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-form__container">
+      <div class="contact-img" data-aos="flip-up">
+        <img src="../svg/contact.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="contact-form" data-aos="zoom-in-left">
+          <form id="contact__form" method="POST"
+            action="https://script.google.com/macros/s/AKfycbz_ACS2QCbMyGcHhaoGYeRKeZ3BrvkP0uMPdWDZu5ViUEwGc-h-R1LbumtyUFDXgXrwrw/exec">
+            <div class="contact-form--container">
+              <h1>Get in Touch!</h1>
+              <p>We would love to hear from you!</p>
+              <input name="Name" type="text" placeholder="Enter Your Name" required />
+              <input name="Email" type="text" placeholder="you@example.com" required />
+              <textarea name="Subject" id="subject" placeholder="Write your message here!"
+                style="text-align: center; width:100% ;height:150px"></textarea>
+              <button type="submit" class="signup-btn">Send</button>
+            </div>
+            <span class="form-submit-msg"
+              style="display: none; padding-left: 20px; font-size: 20px;text-align: center; color: #fff; padding: 10px;">
+              We will get back to you.
+            </span>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="social-media">
+      <div class="social-media--container">
+        <div class="social-media--list">
+          <a href="" target="_blank"><img src="../svg/socials/twitter.svg" alt=""></a>
+          <a href="" target="_blank"><img src="../svg/socials/facebook.svg" alt=""></a>
+          <a href="" target="_blank"><img src="../svg/socials/linkedin.svg" alt=""></a>
+          <a href="" target="_blank"><img src="../svg/socials/instagram.svg" alt=""></a>
+          <a href="" target="_blank"><img src="../svg/socials/discord.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+    Copyright &copy; Uhmazing Inc.
+    <script>
+      document.write(new Date().getFullYear());
+    </script>
+    All Rights Reserved
+  </footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../script/index.js"></script>
+<script src="../script/contact.js"></script>
+
+</html>
