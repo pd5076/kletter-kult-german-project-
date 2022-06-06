@@ -127,7 +127,6 @@ main {
   color: var(--dark_main_color);
   margin: 20px;
 }
-
 .events-container {
   border: 5px solid var(--light_main_color);
   width: auto;
@@ -355,6 +354,71 @@ main {
 
 /* for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .hero-image-container {
+    width: 100%;
+  }
+  .hero-image-container img {
+    width: 100vw;
+    height: 700px;
+    object-fit: cover;
+    object-position: 0 -90px;
+  }
+  .hero-text-container {
+    top: 66%;
+    right: 0px;
+    text-align: right;
+    margin: 0 3%;
+  }
+  .hero-text-container h1 {
+    font-size: 5rem;
+  }
+  .hero-text-container h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .pricing-container img {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: 80px;
+    top: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: -160px 0;
+  }
+  .course--section {
+    padding: 5% 0;
+  }
+  .light-container {
+    padding: 2% 5%;
+  }
+  .dark-container {
+    padding: 2% 5%;
+  }
+  .light-container h1 {
+    width: 50%;
+    font-size: 3rem;
+  }
+  .dark-container h3 {
+    width: 50%;
+    font-size: 2rem;
+  }
+  .section-heading-kurse {
+    font-size: 6rem;
+    top: -80px;
+    right: 20px;
+  }
+  .section-heading-termine {
+    font-size: 6rem;
+    top: -80px;
+    right: 20px;
+  }
 }
 /* Media Query for Large screens */
 @media (min-width: 1281px) {

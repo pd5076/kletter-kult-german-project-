@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-family: "League Spartan";
   background-color: var(--dark_main_color);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header {
   margin: 10px;
