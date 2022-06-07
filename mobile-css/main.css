@@ -225,11 +225,11 @@ main {
   text-decoration: none;
   font-weight: bold;
   margin: 10px;
-  color: var(--dark_color);
+  color: var(--light-color);
 }
 .link-items a:active {
   text-decoration: none;
-  color: var(--dark_color);
+  color: var(--light-color);
 }
 /* Contact Section Ends */
 
@@ -254,6 +254,9 @@ main {
   .contact-text-container {
     margin: 10% auto;
   }
+  .link-items a {
+    color: var(--light-color);
+  }
 }
 /* for tablets and small desktop screens */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -266,6 +269,12 @@ main {
   .hero-text-container h2 {
     font-size: 2rem;
     margin: 10px;
+  }
+  .pricing-container img {
+    height: 500px;
+    width: 150%;
+    object-fit: cover;
+    object-position: -320px -150px;
   }
   .light-container h1 {
     font-size: 2rem;
@@ -350,6 +359,9 @@ main {
     margin-left: 30px;
     font-size: 1.2rem;
   }
+  .link-items a {
+    color: var(--light-color);
+  }
 }
 
 /* for Laptops and Desktops */
@@ -386,14 +398,19 @@ main {
     width: 500px;
     height: 500px;
     position: absolute;
-    right: 80px;
+    right: 60px;
     top: 150px;
     border-radius: 50%;
     object-fit: cover;
     object-position: -160px 0;
   }
-  .course--section {
-    padding: 5% 0;
+  .box {
+    width: 70%;
+    height: 92%;
+    border: 2px solid var(--dark_color);
+    position: absolute;
+    top: 5%;
+    left: 2%;
   }
   .light-container {
     padding: 2% 5%;
@@ -403,23 +420,332 @@ main {
   }
   .light-container h1 {
     width: 50%;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .dark-container h3 {
     width: 50%;
     font-size: 2rem;
   }
   .section-heading-kurse {
-    font-size: 6rem;
-    top: -80px;
+    font-size: 5rem;
+    top: -70px;
     right: 20px;
   }
   .section-heading-termine {
-    font-size: 6rem;
-    top: -80px;
+    font-size: 5rem;
+    top: -70px;
     right: 20px;
+  }
+  .course--section {
+    padding: 5% 0;
+  }
+  .course-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .course-container {
+    width: 45%;
+    height: 165vh;
+  }
+  .text-container h1 {
+    font-size: 2.5rem;
+  }
+  .text-container h2 {
+    font-size: 2rem;
+  }
+  .text-container h3 {
+    font-size: 1.8rem;
+  }
+  .events-container h1 {
+    font-size: 2.5rem;
+  }
+  .events-container h2 {
+    font-size: 2rem;
+    padding: 20px 50px;
+  }
+  .info--section {
+    width: 100vw;
+    height: max-content;
+  }
+  .info-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .info-image {
+    width: 45%;
+  }
+  .info-image img {
+    width: 45vw;
+    margin: 0;
+    position: relative;
+    z-index: +1;
+  }
+  .info-text {
+    width: 55%;
+  }
+  .info-text h1 {
+    font-size: 2.5rem;
+  }
+  .info-text h2 {
+    font-size: 2rem;
+  }
+  .info-text p {
+    font-size: 1.5rem;
+  }
+  .jobs--section {
+    padding-bottom: 2%;
+  }
+  .jobs-text-container {
+    padding: 1% 3%;
+  }
+  .jobs-text-container h1 {
+    font-size: 4rem;
+  }
+  .jobs-text-container p {
+    font-size: 2rem;
+  }
+  .job-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .job-item {
+    width: 45%;
+  }
+  .job-item h3 {
+    font-size: 2rem;
+  }
+  .job-item li {
+    font-size: 1.5rem;
+  }
+  .job-paragraph {
+    padding-top: 10px;
+    justify-content: space-around;
+  }
+  .job-paragraph p {
+    width: 45%;
+    font-size: 1.5rem;
+  }
+  .contact-text-container {
+    margin: 10% auto;
+  }
+  .contact-text-container h1 {
+    font-size: 3rem;
+  }
+  .contact-text-container h3 {
+    font-size: 2rem;
+  }
+  .link-items a {
+    font-size: 1.5rem;
+    color: var(--light-color);
   }
 }
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
+  .hero-image-container {
+    width: 100%;
+    height: fit-content;
+  }
+  .hero-image-container img {
+    width: 100vw;
+    height: 800px;
+    object-fit: cover;
+    object-position: -10px -110px;
+  }
+  .hero-text-container {
+    top: 70%;
+    right: 0px;
+    text-align: right;
+    margin: 0 3%;
+  }
+  .hero-text-container h1 {
+    font-size: 4rem;
+  }
+  .hero-text-container h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .pricing-container img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 250px;
+    top: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: -160px -0px;
+  }
+  .box {
+    width: 60%;
+    height: 92%;
+    border: 2px solid var(--dark_color);
+    position: absolute;
+    top: 5%;
+    left: 10%;
+  }
+  .light-container {
+    padding: 1% 15%;
+  }
+  .dark-container {
+    padding: 1% 15%;
+  }
+  .light-container h1 {
+    width: 50%;
+    font-size: 2rem;
+  }
+  .dark-container h3 {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  .section-heading-kurse {
+    font-size: 5rem;
+    top: -70px;
+    right: 20px;
+  }
+  .section-heading-termine {
+    font-size: 5rem;
+    top: -70px;
+    right: 20px;
+  }
+  .course--section {
+    padding: 3% 0;
+  }
+  .course-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .course-container {
+    width: 30%;
+    height: 175vh;
+  }
+  .course-container img {
+    height: 300px;
+  }
+  .text-container h1 {
+    font-size: 2rem;
+  }
+  .text-container h2 {
+    font-size: 1.5rem;
+  }
+  .text-container h3 {
+    font-size: 1.2rem;
+  }
+  .events-container h1 {
+    font-size: 2rem;
+  }
+  .events-container h2 {
+    font-size: 1.5rem;
+    padding: 20px 80px;
+  }
+  .info--section {
+    width: 100vw;
+    height: max-content;
+  }
+  .info-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .info-image {
+    width: 45%;
+  }
+  .info-image img {
+    width: 45vw;
+    margin: 0;
+    position: relative;
+    z-index: +1;
+  }
+  .info-text {
+    width: 55%;
+    padding: 6%;
+  }
+  .info-text h1 {
+    font-size: 2.5rem;
+  }
+  .info-text h2 {
+    font-size: 2rem;
+  }
+  .info-text p {
+    font-size: 1.2rem;
+  }
+  .jobs-text-container {
+    padding: 2% 5%;
+  }
+  .jobs-text-container h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .jobs-text-container p {
+    font-size: 1.5rem;
+  }
+  .job-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .job-item {
+    width: 45%;
+  }
+  .job-item h3 {
+    font-size: 2rem;
+  }
+  .job-item li {
+    font-size: 1.5rem;
+  }
+  .job-paragraph {
+    margin: 2% 0;
+    justify-content: space-between;
+  }
+  .job-paragraph p {
+    width: 45%;
+    font-size: 1.5rem;
+  }
+  .contact--section {
+    height: 80vh;
+  }
+  .contact-container {
+    width: 50vw;
+    position: relative;
+    text-align: center;
+  }
+  .contact-text-container {
+    /* margin: 20% auto; */
+    position: absolute;
+    left: 60%;
+  }
+  .contact-text-container h1 {
+    font-size: 2.5rem;
+  }
+  .contact-text-container h3 {
+    font-size: 1.5rem;
+  }
+  .social-media--container {
+    justify-content: space-between;
+    margin: 5%;
+  }
+  .link-items a {
+    font-size: 1.5rem;
+    color: var(--light-color);
+  }
 }
