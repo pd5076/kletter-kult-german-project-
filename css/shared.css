@@ -15,7 +15,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "League Spartan";
   background-color: var(--dark_main_color);
   overflow: hidden;
 }
@@ -27,7 +26,6 @@ header {
   height: 8vh;
   width: 60vw;
   max-width: fit-content;
-  background-color: var(--light-color);
 }
 .navbar-icon {
   height: 50px;
