@@ -1,0 +1,137 @@
+:root {
+  --dark_color: #000;
+  --dark_main_color: #ff7300;
+  --light_main_color: #ffe3cd;
+  --light-color: #fff;
+}
+main {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100px;
+  background-color: var(--light-color);
+}
+.price--section {
+  width: 100%;
+  position: relative;
+  background-color: var(--light_main_color);
+  padding-bottom: 10%;
+}
+.section-heading-price {
+  position: absolute;
+  font-size: 2.5rem;
+  right: 10px;
+  top: -45px;
+  color: var(--dark_main_color);
+  margin: 20px;
+}
+.margin-box {
+  padding: 5%;
+}
+.pricing-text-container {
+  width: 90%;
+  margin: 5% auto;
+}
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid;
+}
+.pricing-container .text {
+  width: 70%;
+  font-weight: 400;
+}
+/* for screen medium screen size */
+@media (min-width: 425px) and (max-width: 760px) {
+  .margin-box {
+    padding: 3%;
+  }
+  .pricing-text-container {
+    margin: 0% auto;
+  }
+  .pricing-text-container p {
+    font-size: 18px;
+  }
+}
+/* for tablets and small desktop screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    height: 120px;
+  }
+  .section-heading-price {
+    top: -50px;
+    right: 35px;
+    font-size: 3.5rem;
+  }
+  .margin-box {
+    padding: 3%;
+  }
+  .pricing-text-container {
+    margin: 0% 5%;
+    padding: 5%;
+  }
+  .pricing-text-container p {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+}
+/* for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    height: 120px;
+  }
+  .price--section {
+    padding-bottom: 5%;
+  }
+  .section-heading-price {
+    top: -55px;
+    right: 60px;
+    font-size: 4rem;
+  }
+  .margin-box {
+    padding: 3%;
+  }
+  .pricing-text-container {
+    margin: 0% 5%;
+    padding: 2% 8%;
+  }
+  .pricing-container {
+    margin: 10px;
+  }
+  .pricing-text-container p {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .container {
+    height: 120px;
+  }
+  .price--section {
+    padding-bottom: 5%;
+  }
+  .section-heading-price {
+    top: -70px;
+    right: 65px;
+    font-size: 5rem;
+  }
+  .margin-box {
+    padding: 3%;
+  }
+  .pricing-text-container {
+    margin: 0% 5%;
+    padding: 2% 8%;
+  }
+  .pricing-container {
+    margin: 10px;
+  }
+  .pricing-text-container p {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+}
