@@ -41,7 +41,7 @@ input[type="password"] {
   padding: 8px;
   margin: 5px 0 20px 0;
   outline: none;
-  border: none;
+  border: none !important;
 }
 .contact-form--container textarea {
   outline: none;
