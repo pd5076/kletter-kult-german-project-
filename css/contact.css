@@ -41,7 +41,9 @@ input[type="password"] {
   padding: 8px;
   margin: 5px 0 20px 0;
   outline: none;
-  border: none !important;
+  border: none;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
 }
 .contact-form--container textarea {
   outline: none;
