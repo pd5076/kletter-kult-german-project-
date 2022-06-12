@@ -48,15 +48,20 @@ main {
 .sub-hero--section {
   background-color: var(--light-color);
 }
+.image-container {
+  margin-bottom: -5px;
+}
 .light-container {
   padding: 5%;
 }
 .light-container h1 {
   font-size: 20px;
+  color: var(--dark_main_color);
 }
 .dark-container {
   background-color: var(--light_main_color);
   padding: 5%;
+  margin: 0;
 }
 .dark-container h3 {
   font-size: 15px;
@@ -89,11 +94,9 @@ main {
 }
 .course-container {
   width: 100%;
-  outline: 3px #000 solid;
-  /* border-radius: 10px; */
   height: max-content;
   background-color: var(--dark_main_color);
-  margin: 20px 5px;
+  margin: 20px 0px;
 }
 .course-container .image-container {
   width: 100%;
@@ -117,7 +120,7 @@ main {
 .course-container h3 {
   color: var(--light-color);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
 }
 /* Course Section Ends */
 
@@ -177,12 +180,16 @@ main {
 /* Info Section Ends */
 
 /* Jobs Section Starts */
+.jobs-container {
+  margin: 0;
+}
 .jobs--section {
   width: 100vw;
   height: max-content;
 }
 .jobs-image-container {
   width: 100vw;
+  height: 100%;
 }
 .jobs-image-container img {
   width: 100%;
@@ -215,22 +222,22 @@ main {
 }
 /* Jobs Section Ends */
 /* Contact Section Starts */
-.contact--section {
-  background-image: url(../images/contact.png);
+.address--section {
+  background-image: url(../images/map.png);
   background-position: center;
   background-size: cover;
   height: 50vh;
 }
-.contact-container {
+.address-container {
   display: flex;
 }
-.contact-text-container {
+.address-text-container {
   width: 70%;
   padding: 3%;
   margin: 20% auto;
   background-color: var(--light-color);
 }
-.contact-text-container h1 {
+.address-text-container h1 {
   color: var(--dark_main_color);
 }
 .social-media--container {
@@ -242,7 +249,7 @@ main {
   font-size: 18px;
 }
 .link-items a {
-  text-decoration: none;
+  /* text-decoration: none; */
   font-weight: bold;
   margin: 10px;
   color: var(--light-color);
@@ -271,7 +278,7 @@ main {
   .jobs-text-container {
     padding: 2% 5%;
   }
-  .contact-text-container {
+  .address-text-container {
     margin: 10% auto;
   }
   .link-items a {
@@ -281,7 +288,7 @@ main {
 /* for tablets and small desktop screens */
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero-text-container {
-    top: 70%;
+    top: 75% !important;
   }
   .hero-text-container h1 {
     font-size: 3rem;
@@ -320,7 +327,7 @@ main {
     font-size: 1.8rem;
   }
   .text-container h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .section-heading-termine {
     font-size: 4rem;
@@ -366,13 +373,13 @@ main {
   .job-paragraph p {
     margin: 10px;
   }
-  .contact-text-container {
+  .address-text-container {
     margin: 10% auto;
   }
-  .contact-text-container h1 {
+  .address-text-container h1 {
     font-size: 2rem;
   }
-  .contact-text-container h3 {
+  .address-text-container h3 {
     font-size: 1.5rem;
   }
   .link-items {
@@ -477,7 +484,7 @@ main {
     font-size: 1.8rem;
   }
   .text-container h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .events-container h1 {
     font-size: 2.2rem;
@@ -555,13 +562,13 @@ main {
     width: 45%;
     font-size: 1.5rem;
   }
-  .contact-text-container {
+  .address-text-container {
     margin: 10% auto;
   }
-  .contact-text-container h1 {
+  .address-text-container h1 {
     font-size: 2.5rem;
   }
-  .contact-text-container h3 {
+  .address-text-container h3 {
     font-size: 1.8rem;
   }
   .link-items a {
@@ -667,7 +674,7 @@ main {
     font-size: 1.2rem;
   }
   .text-container h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .events-container h1 {
     font-size: 2rem;
@@ -746,23 +753,23 @@ main {
     width: 45%;
     font-size: 1.2rem;
   }
-  .contact--section {
+  .address--section {
     height: 70vh;
   }
-  .contact-container {
+  .address-container {
     width: 50vw;
     position: relative;
     text-align: center;
   }
-  .contact-text-container {
+  .address-text-container {
     /* margin: 20% auto; */
     position: absolute;
     left: 60%;
   }
-  .contact-text-container h1 {
+  .address-text-container h1 {
     font-size: 2.2rem;
   }
-  .contact-text-container h3 {
+  .address-text-container h3 {
     font-size: 1.2rem;
   }
   .social-media--container {
