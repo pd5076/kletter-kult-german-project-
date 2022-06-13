@@ -239,6 +239,10 @@ main {
 }
 .address-text-container h1 {
   color: var(--dark_main_color);
+  text-align: left;
+}
+.address-text-container h3 {
+  text-align: left;
 }
 .social-media--container {
   display: flex;
@@ -403,7 +407,7 @@ main {
     object-position: 0 -90px;
   }
   .hero-text-container {
-    top: 66%;
+    top: 75% !important;
     right: 0px;
     text-align: right;
     margin: 0 3%;
@@ -526,6 +530,8 @@ main {
   }
   .info-text p {
     font-size: 1.5rem;
+    margin-left: 30px;
+    text-align: right;
   }
   .jobs--section {
     padding-bottom: 2%;
@@ -589,7 +595,7 @@ main {
     object-position: -10px -110px;
   }
   .hero-text-container {
-    top: 70%;
+    top: 75% !important;
     right: 0px;
     text-align: right;
     margin: 0 3%;
@@ -719,6 +725,7 @@ main {
   }
   .info-text p {
     font-size: 1rem;
+    margin-left: 50px;
   }
   .jobs-text-container {
     padding: 2% 5%;
