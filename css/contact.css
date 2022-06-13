@@ -52,6 +52,8 @@ input[type="password"] {
   font-size: 16px;
   margin: 5px 0;
   border: none;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
 }
 
 /* Set a style for all buttons */
