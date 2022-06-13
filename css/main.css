@@ -163,7 +163,7 @@ main {
 }
 .info-image img {
   width: 70vw;
-  margin: 0 10%;
+  margin: 0 10% -20px 10%;
 }
 .info-text {
   text-align: right;
@@ -240,9 +240,11 @@ main {
 .address-text-container h1 {
   color: var(--dark_main_color);
   text-align: left;
+  margin: 0;
 }
 .address-text-container h3 {
   text-align: left;
+  margin: 0;
 }
 .social-media--container {
   display: flex;
@@ -278,6 +280,10 @@ main {
   }
   .course-box {
     margin: 40px 20px;
+  }
+  .info-image img {
+    width: 70vw;
+    margin: 0 10% -20px 10%;
   }
   .jobs-text-container {
     padding: 2% 5%;
