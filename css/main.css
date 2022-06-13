@@ -498,11 +498,13 @@ main {
   }
   .events-container h1 {
     font-size: 2.2rem;
-    padding: 20px 50px;
+    margin: 10px;
+    /* margin: 0; */
+    padding: 5px 50px;
   }
   .events-container h2 {
     font-size: 2rem;
-    padding: 20px 50px;
+    padding: 0px 50px;
   }
   .info--section {
     width: 100vw;
