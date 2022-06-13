@@ -160,11 +160,9 @@ footer {
   }
   .desktop-nav li a:hover {
     color: #000;
-    text-decoration: underline 8px #fff;
   }
   .active {
     color: #000;
-    text-decoration: underline 8px #fff;
   }
 }
 /* Media Query for Large screens */
