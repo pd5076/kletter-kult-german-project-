@@ -30,5 +30,6 @@ window.addEventListener("load", function () {
     }).then(() => {
       document.querySelector(".form-submit-msg").style.display = "block";
     });
+    form.reset();
   });
 });
