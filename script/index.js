@@ -17,14 +17,9 @@ navbarClose.addEventListener("click", function () {
   navbarOpen.style.display = "block";
 });
 
-// ANIMATION ON SCROLL
-AOS.init({
-  duration: 1200,
-});
-
-//post request to redirect the join message
+//post request to redirect the contact message
 window.addEventListener("load", function () {
-  const form = document.getElementById("my-form");
+  const form = document.getElementById("contact__form");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const data = new FormData(form);
@@ -33,8 +28,7 @@ window.addEventListener("load", function () {
       method: "POST",
       body: data,
     }).then(() => {
-      document.querySelector(".thankyou-msg").style.display = "block";
-      document.querySelector(".form-container").style.display = "none";
+      document.querySelector(".form-submit-msg").style.display = "block";
     });
   });
 });
